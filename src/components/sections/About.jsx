@@ -61,7 +61,7 @@ export default function About() {
           
           <motion.div variants={fadeInUp} className="space-y-6 text-slate-600 dark:text-slate-400 leading-relaxed text-lg max-w-xl">
             <p className="first-letter:text-6xl first-letter:font-black first-letter:mr-3 first-letter:float-left first-letter:bg-gradient-to-b first-letter:from-orange-500 first-letter:to-orange-700 first-letter:bg-clip-text first-letter:text-transparent">
-              I’m a 3rd-year Computer Science undergrad at <span className="text-slate-900 dark:text-white font-bold italic underline decoration-orange-500/30 underline-offset-8">DIT University</span> with a strong foundation in Full Stack Development.
+              I am a 3rd-year Computer Science undergrad at <span className="text-slate-900 dark:text-white font-bold italic underline decoration-orange-500/30 underline-offset-8">DIT University</span> with a strong foundation in Full Stack Development.
             </p>
             <p>
               I focus on building scalable backend architectures and intuitive frontend interfaces using the <span className="bg-gradient-to-r from-slate-900 to-slate-700 dark:from-white dark:to-slate-400 bg-clip-text text-transparent font-bold">MERN stack</span>.
@@ -184,11 +184,11 @@ function LuxuryCard({ icon, title, desc, variants }) {
       </div>
 
       {/* Subtle Right Arrow: Jo hover par reveal hota hai */}
-      <div className="absolute right-6 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 group-hover:translate-x-2 transition-all duration-500">
+      {/* <div className="absolute right-6 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 group-hover:translate-x-2 transition-all duration-500">
         <svg className="w-5 h-5 text-orange-500/40" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
         </svg>
-      </div>
+      </div> */}
     </motion.div>
   );
 }
