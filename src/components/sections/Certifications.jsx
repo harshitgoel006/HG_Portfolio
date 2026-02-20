@@ -160,38 +160,28 @@ export default function Certifications() {
 
                 {/* Action Link: Magnetic feel */}
                 {c.link && (
-  <motion.a
+  <a
     href={c.link}
     target="_blank"
     rel="noopener noreferrer"
-    className="mt-10 flex items-center gap-4 relative z-30 w-fit cursor-pointer group/link pointer-events-auto"
-    whileHover="hover"
-    whileTap={{ scale: 0.96 }}
+    className="mt-10 inline-block group"
+    aria-label="Verify certificate"
   >
-    {/* Line Container: Is par bhi hover trigger hoga */}
-    <div className="flex items-center">
-      <motion.div 
-        variants={{
-          hover: { width: 48, backgroundColor: "#f97316" } // Orange-500
-        }}
-        initial={{ width: 32 }}
-        className="h-[2px] bg-slate-200 dark:bg-slate-800 transition-colors duration-300" 
-      />
+    <div className="py-4 px-6 flex items-center gap-4 bg-slate-100/50 dark:bg-slate-800/50 rounded-xl backdrop-blur-sm hover:bg-orange-500/20 transition-all duration-300">
+      
+      {/* Line */}
+      <div className="flex items-center">
+        <div 
+          className="h-[2px] bg-slate-300 dark:bg-slate-700 w-8 group-hover:w-12 group-hover:bg-orange-500 transition-all duration-300"
+        />
+      </div>
+
+      {/* Text */}
+      <span className="text-xs font-black uppercase tracking-[0.3em] text-slate-400 group-hover:text-orange-600 group-hover:translate-x-1 transition-all duration-300">
+        Verify Now
+      </span>
     </div>
-
-    {/* Text Container */}
-    <motion.span 
-      variants={{
-        hover: { x: 4 }
-      }}
-      className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-400 group-hover/link:text-orange-500 dark:group-hover/link:text-orange-400 transition-colors duration-300"
-    >
-      Verify Now
-    </motion.span>
-
-    {/* Hit Area Expansion: Desktop aur Mobile dono ke liye clickable zone bada karta hai */}
-    <span className="absolute -inset-3 z-[-1]" aria-hidden="true" />
-  </motion.a>
+  </a>
 )}
               </div>
             </motion.div>

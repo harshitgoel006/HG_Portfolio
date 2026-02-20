@@ -33,7 +33,7 @@ export default function Footer() {
               </span>
               <div className="w-1.5 h-1.5 rounded-full bg-orange-500 shadow-[0_0_12px_#f97316]" />
               <span className="text-[11px] font-black uppercase tracking-[0.4em] text-slate-500">
-                UI/UX Designer
+                Open to Opportunities
               </span>
               <div className="w-1.5 h-1.5 rounded-full bg-rose-500 shadow-[0_0_12px_#f43f5e]" />
               <span className="text-[11px] font-black uppercase tracking-[0.4em] bg-gradient-to-r from-orange-500 to-rose-500 bg-clip-text text-transparent">
