@@ -7,7 +7,7 @@ export const skills = [
   {
     category: "Frontend",
     tagline: "Modern, responsive UI development",
-    items: ["React.js", "HTML", "CSS", "Tailwind CSS", "Responsive Web Design"],
+    items: ["React.js", "CSS", "Tailwind CSS", "Responsive Web Design"],
   },
   {
     category: "Backend",
