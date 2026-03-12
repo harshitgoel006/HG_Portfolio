@@ -34,4 +34,22 @@ export const projects = [
     live: "https://currency-converter-dusky-eta-38.vercel.app/",
     featured: false,
   },
+  {
+  id: "skycast",
+  title: "SkyCast",
+  tagline: "Modern animated weather dashboard with real-time insights",
+  description:
+    "SkyCast is a modern weather dashboard that provides real-time weather conditions, air quality data, and animated visualizations. The interface dynamically adapts to day and night conditions and delivers a smooth, interactive user experience with advanced UI animations.",
+  features: [
+    "Real-time weather data using OpenWeather API",
+    "7-day forecast and hourly temperature trends",
+    "Air quality monitoring and radar map integration",
+    "Sun path visualization showing daylight progress",
+    "Dynamic UI that adapts to day and night weather conditions"
+  ],
+  tech: ["React", "Tailwind CSS", "Framer Motion", "OpenWeather API", "Leaflet", "Vite"],
+  github: "https://github.com/harshitgoel006/SkyCast", 
+  live: "https://skycast-plum-one.vercel.app/",
+  featured: false,
+},
 ];
