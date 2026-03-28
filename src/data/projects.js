@@ -31,7 +31,7 @@ export const projects = [
     ],
     tech: ["React", "Node.js", "Express", "MongoDB", "Redis", "Tailwind CSS"],
     github: "https://github.com/harshitgoel006/News_Nova", // Replace with actual link if different
-    live: "https://harshitgoel-portfolio.vercel.app",
+    live: "https://news-nova-rose.vercel.app",
     featured: true,
   },
   
