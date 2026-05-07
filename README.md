@@ -1,16 +1,128 @@
-# React + Vite
+# Harshit Goel Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive portfolio website built using **React.js** to showcase my projects, skills, and experience.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** https://harshitgoel-portfolio.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This portfolio highlights my development journey, projects, and technical skills with a clean UI, smooth animations, and a well-structured layout.
 
-## Expanding the ESLint configuration
+It is designed to create a strong first impression and present my work professionally.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Features
+
+* Modern UI with clean and minimal design
+* Fully responsive (mobile-first approach)
+* Smooth animations and transitions
+* Dynamic project showcase
+* Contact section integration
+* Modular component-based architecture
+
+---
+
+## Tech Stack
+
+* React.js
+* JavaScript
+* Tailwind CSS
+* Vercel (Deployment)
+
+---
+
+## Project Structure
+
+```
+src
+│   App.jsx
+│   index.css
+│   main.jsx
+│   
+├───assets
+├───components
+│   ├───layout
+│   │       Footer.jsx
+│   │       Navbar.jsx
+│   │       
+│   ├───sections
+│   │       About.jsx
+│   │       Certifications.jsx
+│   │       Contact.jsx
+│   │       Education.jsx
+│   │       Hero.jsx
+│   │       Projects.jsx
+│   │       Skills.jsx
+│   │       
+│   └───ui
+│           Button.jsx
+│           Card.jsx
+│           
+└───data
+        certifications.js
+        education.js
+        projects.js
+        skills.js
+```
+
+---
+
+## Purpose
+
+* Showcase my full-stack development skills
+* Present projects in a professional way
+* Build a strong online presence
+* Improve UI/UX design and frontend architecture skills
+
+---
+
+## Getting Started
+
+### 1️⃣ Clone the repository
+
+```
+git clone https://github.com/harshitgoel006/HG_Portfolio.git
+```
+
+### 2️⃣ Navigate to project folder
+
+```
+cd portfolio
+```
+
+### 3️⃣ Install dependencies
+
+```
+npm install
+```
+
+### 4️⃣ Run the project
+
+```
+npm run dev
+```
+
+---
+
+## Future Improvements
+
+* Add dark/light theme toggle
+* Add blog section
+* Backend integration for contact form
+* Performance optimization
+
+---
+
+## Author
+
+**Harshit Goel**
+Full Stack Developer | MERN | Java
+
+---
+
+## Support
+
+If you like this project, consider giving it a ⭐ on GitHub!
