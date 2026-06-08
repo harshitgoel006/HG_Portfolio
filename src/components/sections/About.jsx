@@ -61,13 +61,13 @@ export default function About() {
           
           <motion.div variants={fadeInUp} className="space-y-6 text-slate-600 dark:text-slate-400 leading-relaxed text-lg max-w-xl">
             <p className="first-letter:text-6xl first-letter:font-black first-letter:mr-3 first-letter:float-left first-letter:bg-gradient-to-b first-letter:from-orange-500 first-letter:to-orange-700 first-letter:bg-clip-text first-letter:text-transparent">
-              I am a 3rd-year Computer Science undergrad at <span className="text-slate-900 dark:text-white font-bold italic underline decoration-orange-500/30 underline-offset-8">DIT University</span> with a strong foundation in Full Stack Development.
+              I am a final-year Computer Science student at <span className="text-slate-900 dark:text-white font-bold italic underline decoration-orange-500/30 underline-offset-8">DIT University</span> with a strong foundation in Full Stack Development.
             </p>
             <p>
-              I focus on building scalable backend architectures and intuitive frontend interfaces using the <span className="bg-gradient-to-r from-slate-900 to-slate-700 dark:from-white dark:to-slate-400 bg-clip-text text-transparent font-bold">MERN stack</span>.
+              I focus on building scalable backend architectures and intuitive frontend interfaces using React, Node.js, Express.js, MySQL, MongoDB, and modern development tools.
             </p>
             <div className="bg-gradient-to-r from-slate-100 to-transparent dark:from-slate-900/60 dark:to-transparent backdrop-blur-sm p-6 rounded-2xl border-l-4 border-orange-500 italic shadow-sm">
-              "Recently, I developed Smart Cart, a production-grade e-commerce platform featuring JWT authentication."
+              "Built full-stack applications featuring JWT authentication, REST APIs, Redis caching, and database-driven architectures."
             </div>
           </motion.div>
 
@@ -82,13 +82,13 @@ export default function About() {
             <LuxuryCard 
               icon="🧠" 
               title="Problem Solving" 
-              desc="100+ LeetCode problems & regular contests" 
+              desc="200+ LeetCode problems & regular contests" 
               variants={fadeInUp}
             />
             <LuxuryCard 
               icon="🚀" 
-              title="MERN Stack Projects" 
-              desc="React, Node.js, Express, MongoDB in real-world apps" 
+              title="Full Stack Projects" 
+              desc="React, Node.js, MySQL, MongoDB & REST APIs" 
               variants={fadeInUp}
             />
           </div>
@@ -129,7 +129,7 @@ export default function About() {
               className="absolute -right-8 top-20 bg-white dark:bg-slate-800 p-5 rounded-3xl shadow-2xl border border-slate-100 dark:border-slate-700 z-30"
             >
               <div className="flex flex-col items-center">
-                <span className="text-2xl font-black text-orange-500">3rd</span>
+                <span className="text-xl font-black text-orange-500">Final</span>
                 <span className="text-[9px] uppercase tracking-tighter font-bold text-slate-500">Year Student</span>
               </div>
             </motion.div>
@@ -183,12 +183,7 @@ function LuxuryCard({ icon, title, desc, variants }) {
         </p>
       </div>
 
-      {/* Subtle Right Arrow: Jo hover par reveal hota hai */}
-      {/* <div className="absolute right-6 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 group-hover:translate-x-2 transition-all duration-500">
-        <svg className="w-5 h-5 text-orange-500/40" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-        </svg>
-      </div> */}
+      
     </motion.div>
   );
 }

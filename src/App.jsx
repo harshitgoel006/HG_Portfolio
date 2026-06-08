@@ -7,6 +7,7 @@ import Certifications from "./components/sections/Certifications";
 import Projects from "./components/sections/Projects";
 import Skills from "./components/sections/Skills";
 import Contact from "./components/sections/Contact";
+import Experience from "./components/sections/Experience";
 
 export default function App() {
   return (
@@ -17,9 +18,10 @@ export default function App() {
         <Hero />
         <About />
         <Education />
-        <Certifications />
-        <Projects />
+        <Experience/>
         <Skills />
+        <Projects />
+        <Certifications />
         <Contact />
       </main>
 

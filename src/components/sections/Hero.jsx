@@ -52,7 +52,7 @@ const Hero = () => {
               <span className="relative inline-flex rounded-full h-2 w-2 bg-orange-500"></span>
             </span>
             <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-orange-600 dark:text-orange-400">
-              Available for Projects
+             Available for Internships & Opportunities
             </span>
           </motion.div>
 
@@ -68,14 +68,14 @@ const Hero = () => {
             web apps.
           </motion.h1>
 
-          <motion.p variants={itemVariants} className="text-base md:text-lg text-slate-600 dark:text-slate-400 max-w-lg mb-4 leading-relaxed">
-            Hi, I’m <span className="text-slate-900 dark:text-white font-semibold">Harshit Goel</span> — a Full Stack Developer (MERN) focused on building scalable, real-world web applications.
+          <motion.p variants={itemVariants} className="text-base md:text-sm text-slate-600 dark:text-slate-400 max-w-lg mb-4 leading-relaxed">
+            Hi, I’m <span className="text-slate-900 dark:text-white font-semibold">Harshit Goel</span> — a Full Stack Developer focused on building scalable, real-world web applications using React, Node.js, and modern backend technologies.
           </motion.p>
 
           <motion.p variants={itemVariants} className="text-[11px] font-medium text-slate-500 dark:text-slate-500 mb-8 flex items-center justify-center lg:justify-start gap-2">
-            <span className="text-orange-500">✔</span> Built real-world projects like Smart Cart
+            <span className="text-orange-500">✔</span> Web Development Intern @ Pinnacle Labs
             <span className="h-1 w-1 rounded-full bg-slate-300" />
-            100+ DSA problems solved
+            200+ DSA problems solved
           </motion.p>
 
           <motion.div variants={itemVariants} className="flex items-center justify-center lg:justify-start gap-4 mb-10 text-[11px] font-bold tracking-widest uppercase text-slate-400 dark:text-slate-600">
@@ -138,7 +138,7 @@ const Hero = () => {
               </div>
             </div>
             <p className="relative z-10 text-[8px] font-black uppercase tracking-[0.1em] text-slate-800 dark:text-slate-200">
-              Software Developer
+              Full Stack Developer
             </p>
             <div className="mt-2 h-[1px] w-8 bg-orange-500/20 rounded-full overflow-hidden relative z-10">
               <motion.div animate={{ x: [-32, 32] }} transition={{ duration: 2, repeat: Infinity, ease: "linear" }} className="w-full h-full bg-orange-500" />

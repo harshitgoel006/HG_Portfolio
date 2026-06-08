@@ -28,7 +28,7 @@ export default function Skills() {
               Skills<span className="text-orange-500">.</span>
             </h2>
             <p className="mt-8 text-slate-500 dark:text-slate-400 font-medium tracking-wide max-w-md">
-              Crafting production-grade digital experiences with focus on architecture and performance.
+              Building scalable full-stack applications with modern technologies, clean architecture, and performance-driven development.
             </p>
           </motion.div>
 
