@@ -11,7 +11,8 @@ import {
   ArrowUpRight,
   Github,
   Wind,
-  Sun
+  Sun,
+  Cpu
 } from "lucide-react";
 import { projects } from "../../data/projects";
 
@@ -67,26 +68,33 @@ function ProjectCard({ project, index }) {
       transition={{ duration: 0.8, ease: [0.215, 0.61, 0.355, 1] }}
       className="relative group grid grid-cols-1 lg:grid-cols-12 gap-12 items-center"
     >
-      {/* THE OVAL BREAKOUT "0":
-        - Left se -left-12 and Top se -top-24 kiya taaki half margin se bahar ho jaye.
-        - Hover hote hi text-orange-500 ki low opacity blur transition se ek sleek horizontal oval effect banayega.
-      */}
+      {/* THE OVAL BREAKOUT "0" */}
       <span className="absolute -top-24 -left-12 text-[240px] md:text-[280px] font-black text-slate-900/[0.02] dark:text-white/[0.01] italic select-none pointer-events-none transition-all duration-1000 transform scale-x-110 tracking-tighter group-hover:scale-x-125 group-hover:scale-y-95 group-hover:text-orange-500/[0.035] group-hover:-translate-x-2">
         0
       </span>
 
-      {/* LEFT SIDE: Immersive & Dynamic Interactive Details (7 Columns) */}
+      {/* LEFT SIDE: Interactive Details (7 Columns) */}
       <div className="lg:col-span-7 z-10 space-y-6">
         
-        {/* Dynamic Tagline Line Header */}
-        <div className="flex items-center gap-3 transition-transform duration-500 group-hover:translate-x-2">
-           <div className="w-8 h-[1px] bg-orange-500/50 transition-all duration-500 group-hover:w-12 group-hover:bg-orange-500" />
-           <span className="text-[10px] font-black uppercase tracking-[0.3em] text-orange-500">
-             {project.featured ? "Featured Architecture" : "Core Module"}
-           </span>
+        {/* Tagline Line Header & Dynamic Actively Building Badge */}
+        <div className="flex flex-wrap items-center gap-4 transition-transform duration-500 group-hover:translate-x-2">
+          <div className="flex items-center gap-3">
+             <div className="w-8 h-[1px] bg-orange-500/50 transition-all duration-500 group-hover:w-12 group-hover:bg-orange-500" />
+             <span className="text-[10px] font-black uppercase tracking-[0.3em] text-orange-500">
+               {project.featured ? "Featured Architecture" : "Core Module"}
+             </span>
+          </div>
+
+          {/* Conditional Smart Cart Neon Badge */}
+          {project.id === "smart-cart" && (
+            <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md text-[9px] font-black uppercase tracking-wider bg-amber-500/10 border border-amber-500/30 text-amber-600 dark:text-amber-400 animate-pulse shadow-[0_0_15px_rgba(245,158,11,0.05)]">
+              <Cpu size={10} className="animate-spin-slow" />
+              Actively Building
+            </div>
+          )}
         </div>
 
-        {/* Title: Dynamic Fluid Font Color Grid Transition */}
+        {/* Title */}
         <h3 className="text-3xl md:text-4xl font-black tracking-tight text-slate-900 dark:text-white bg-gradient-to-r from-slate-900 via-slate-900 to-slate-900 dark:from-white dark:via-white dark:to-white group-hover:from-orange-500 group-hover:to-rose-500 bg-clip-text group-hover:text-transparent transition-all duration-700 ease-out transform group-hover:translate-x-1">
           {project.title}
         </h3>
@@ -96,18 +104,18 @@ function ProjectCard({ project, index }) {
           {project.tagline}
         </p>
 
-        {/* Description Interaction */}
+        {/* Description */}
         <p className="text-sm md:text-base text-slate-500 dark:text-slate-400 font-medium leading-relaxed max-w-2xl transition-colors duration-500 group-hover:text-slate-600 dark:group-hover:text-slate-300">
           {project.description}
         </p>
 
-        {/* Feature Checklists - Dynamic Lift Trigger */}
+        {/* Feature Checklists */}
         <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-xl pt-2">
            {project.features.map((f, i) => (
              <li 
                key={i} 
                className="flex items-start gap-2.5 text-xs font-semibold text-slate-500 dark:text-slate-400 transition-all duration-500 group-hover:translate-x-1.5"
-               style={{ transitionDelay: `${i * 40}ms` }} // Elegant Stagger effect on Hover
+               style={{ transitionDelay: `${i * 40}ms` }}
              >
                 <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-orange-500/60 shrink-0 transition-transform duration-500 group-hover:scale-125 group-hover:bg-orange-500" />
                 <span className="leading-tight">{f}</span>
@@ -115,7 +123,7 @@ function ProjectCard({ project, index }) {
            ))}
         </ul>
 
-        {/* Tech Badges Stack - Lift Floating Trigger */}
+        {/* Tech Badges Stack */}
         <div className="flex flex-wrap gap-2 pt-4">
           {project.tech.map((t, idx) => (
             <span 
@@ -128,7 +136,7 @@ function ProjectCard({ project, index }) {
           ))}
         </div>
 
-        {/* Action Call to Actions Buttons */}
+        {/* Action Buttons */}
         <div className="flex items-center gap-4 pt-6 transition-transform duration-500 group-hover:translate-x-1">
           {project.github && (
             <motion.a 
