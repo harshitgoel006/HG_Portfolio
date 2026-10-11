@@ -87,7 +87,7 @@ export default function RoyalNavbar() {
 
             {/* Resume Button */}
             <motion.a
-              href="https://drive.google.com/file/d/1Dq04ANlCgUdddZqxNS6F2wCwPX9vXpUp/view?usp=drive_link"
+              href="/resume.pdf"
               whileHover={{
                 scale: 1.05,
                 boxShadow: "0 10px 40px -10px rgba(249, 115, 22, 0.7)",

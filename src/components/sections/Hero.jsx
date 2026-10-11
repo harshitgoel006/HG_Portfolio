@@ -69,13 +69,13 @@ const Hero = () => {
           </motion.h1>
 
           <motion.p variants={itemVariants} className="text-base md:text-sm text-slate-600 dark:text-slate-400 max-w-lg mb-4 leading-relaxed">
-            Hi, I’m <span className="text-slate-900 dark:text-white font-semibold">Harshit Goel</span> — a Full Stack Developer focused on building scalable, real-world web applications using React, Node.js, and modern backend technologies.
+            Hi, I’m <span className="text-slate-900 dark:text-white font-semibold">Harshit Goel</span> — a Full Stack Developer building scalable, real-world web applications with React, Node.js, PHP, and modern database technologies.
           </motion.p>
 
           <motion.p variants={itemVariants} className="text-[11px] font-medium text-slate-500 dark:text-slate-500 mb-8 flex items-center justify-center lg:justify-start gap-2">
-            <span className="text-orange-500">✔</span> Web Development Intern @ Pinnacle Labs
+            <span className="text-orange-500">✔</span> Full Stack Development Intern @ ElexoPlus India
             <span className="h-1 w-1 rounded-full bg-slate-300" />
-            200+ DSA problems solved
+            B.Tech CSE · CGPA 9.0/10.0
           </motion.p>
 
           <motion.div variants={itemVariants} className="flex items-center justify-center lg:justify-start gap-4 mb-10 text-[11px] font-bold tracking-widest uppercase text-slate-400 dark:text-slate-600">

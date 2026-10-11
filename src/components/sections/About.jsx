@@ -61,13 +61,13 @@ export default function About() {
           
           <motion.div variants={fadeInUp} className="space-y-6 text-slate-600 dark:text-slate-400 leading-relaxed text-lg max-w-xl">
             <p className="first-letter:text-6xl first-letter:font-black first-letter:mr-3 first-letter:float-left first-letter:bg-gradient-to-b first-letter:from-orange-500 first-letter:to-orange-700 first-letter:bg-clip-text first-letter:text-transparent">
-              I am a final-year Computer Science student at <span className="text-slate-900 dark:text-white font-bold italic underline decoration-orange-500/30 underline-offset-8">DIT University</span> with a strong foundation in Full Stack Development.
+              I am a Computer Science and Engineering student at <span className="text-slate-900 dark:text-white font-bold italic underline decoration-orange-500/30 underline-offset-8">DIT University</span> with a strong foundation in full-stack development and core computer science.
             </p>
             <p>
-              I focus on building scalable backend architectures and intuitive frontend interfaces using React, Node.js, Express.js, MySQL, MongoDB, and modern development tools.
+              I focus on building scalable backend architectures and intuitive frontend interfaces using React, Node.js, Express.js, PHP, MySQL, MongoDB, and modern development tools.
             </p>
             <div className="bg-gradient-to-r from-slate-100 to-transparent dark:from-slate-900/60 dark:to-transparent backdrop-blur-sm p-6 rounded-2xl border-l-4 border-orange-500 italic shadow-sm">
-              "Built full-stack applications featuring JWT authentication, REST APIs, Redis caching, and database-driven architectures."
+              "Building full-stack applications featuring JWT authentication, REST APIs, Redis caching, and database-driven architectures."
             </div>
           </motion.div>
 
@@ -82,13 +82,13 @@ export default function About() {
             <LuxuryCard 
               icon="🧠" 
               title="Problem Solving" 
-              desc="200+ LeetCode problems & regular contests" 
+              desc="Strong foundations in DSA, DBMS, operating systems, and networks"
               variants={fadeInUp}
             />
             <LuxuryCard 
               icon="🚀" 
               title="Full Stack Projects" 
-              desc="React, Node.js, MySQL, MongoDB & REST APIs" 
+              desc="React, Node.js, PHP, MySQL, MongoDB & REST APIs"
               variants={fadeInUp}
             />
           </div>

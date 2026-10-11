@@ -181,7 +181,7 @@ function ProjectCard({ project, index }) {
           <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-orange-500/30 to-transparent" />
           
           <div className="flex flex-col items-center gap-3">
-            {project.id === "news-nexus" && (
+            {project.id === "news-nova" && (
               <>
                 <Newspaper className="w-14 h-14 text-slate-700 dark:text-slate-200 group-hover/viz:text-orange-500 transition-colors duration-500" strokeWidth={1.2} />
                 <span className="text-[9px] font-black uppercase tracking-[0.3em] text-slate-400 dark:text-slate-500 group-hover/viz:text-orange-500/80 transition-colors">NEWS_ENGINE</span>
@@ -215,7 +215,7 @@ function ProjectCard({ project, index }) {
 
         {/* Dynamic Context Chips */}
         <div className="absolute inset-0 pointer-events-none">
-          {project.id === "news-nexus" && (
+          {project.id === "news-nova" && (
             <>
               <FloatingNode icon={<Database size={11}/>} text="Redis" delay={0} top="22%" left="10%" />
               <FloatingNode icon={<Lock size={11}/>} text="OTP Auth" delay={0.8} top="68%" left="6%" />

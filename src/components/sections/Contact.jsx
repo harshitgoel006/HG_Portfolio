@@ -16,7 +16,7 @@ export default function Contact() {
     {
       category: "Phone",
       tagline: "Direct Connection",
-      content: "+91 84392 91501",
+      content: "+91 8439291501",
       link: "tel:+918439291501",
       icon: <Phone size={24} />,
       items: ["Voice Call", "Instant Response"]
